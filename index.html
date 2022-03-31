@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <form action="recap.php" method="post" enctype="multipart/form-data">
+        <label for="file">Choisissez un fichier<input type="file" name="file" id="file">
+            </label>
+
+        <label for="">Nom<input type="text" name="nom"></label>
+        <label for="">Prenom<input type="text" name="prenom"></label>
+        <label for="">Nombre de sandwiches<input type="number" name="nbSandwiches" required></label>
+        <label for="">Adresse<input type="textarea" name="adresse"></label>
+        <label for=""> 
+            <select name="typeSandwiche" id="">
+            <option value="poulet">poulet</option>
+            <option value="dinde">dinde</option>
+            <option value="thon">thon</option>
+            <option value="viande hachee">viande hachee</option>
+        </select>
+       
+    <label for="">Choisissez vos ingrédients
+      
+     <label for="harissa">harissa<input type="checkbox" name="checkbox[]" value="harissa" ></label>
+     <label for="salade">salade<input type="checkbox" name="checkbox[]" value="salade"></label>
+     <label for="mayo">mayo<input type="checkbox" name="checkbox[]" value="mayo"></label>
+    </label>
+   
+<input type="submit" value="valider commande">
+
+    </form>
+</body>
+
+</html>
